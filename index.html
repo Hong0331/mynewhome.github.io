@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful Web Page</title>
+    <title>Elegant Web Page</title>
     <style>
         /* Reset default margin and padding */
-        body, h1, p {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            color: #333;
         }
 
         /* Navigation bar styles */
         nav {
-            background: #333;
-            color: #fff;
+            background: #34495e;
             padding: 10px 20px;
-            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
 
         nav ul {
@@ -31,84 +35,129 @@
         }
 
         nav ul li {
-            margin: 0 15px;
+            margin: 0 20px;
         }
 
         nav ul li a {
-            color: #fff;
+            color: #ecf0f1;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background 0.3s, color 0.3s;
         }
 
         nav ul li a:hover {
-            color: #f39c12;
+            background: #ecf0f1;
+            color: #34495e;
         }
 
         /* Hero section styles */
         .hero {
-            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
             color: #fff;
-            height: 500px;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
+            padding: 0 20px;
         }
 
         .hero h1 {
-            font-size: 48px;
+            font-size: 60px;
             margin-bottom: 20px;
+            letter-spacing: 2px;
         }
 
         .hero p {
-            font-size: 20px;
-            margin-bottom: 20px;
+            font-size: 24px;
+            margin-bottom: 30px;
         }
 
         .hero a {
-            background: #f39c12;
+            background: #e74c3c;
             color: #fff;
-            padding: 10px 20px;
+            padding: 15px 30px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 30px;
+            font-size: 18px;
+            transition: background 0.3s, transform 0.3s;
         }
 
         .hero a:hover {
-            background: #e67e22;
+            background: #c0392b;
+            transform: scale(1.05);
         }
 
         /* Content section styles */
         .content {
-            padding: 40px 20px;
+            padding: 80px 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .card {
+            background: #ecf0f1;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
             text-align: center;
+            transition: transform 0.3s;
         }
 
-        .content h2 {
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            font-size: 28px;
+            color: #2c3e50;
+        }
+
+        .card p {
             margin-bottom: 20px;
-            font-size: 32px;
+            font-size: 16px;
+            color: #7f8c8d;
         }
 
-        .content p {
-            margin-bottom: 20px;
-            font-size: 18px;
-        }
-
-        .content a {
-            color: #333;
+        .card a {
+            color: #e74c3c;
             text-decoration: none;
-            border-bottom: 2px solid #f39c12;
+            font-weight: 600;
+            transition: color 0.3s;
         }
 
-        .content a:hover {
-            color: #f39c12;
+        .card a:hover {
+            color: #c0392b;
         }
 
         /* Footer styles */
         footer {
-            background: #333;
-            color: #fff;
-            padding: 10px 20px;
+            background: #34495e;
+            color: #ecf0f1;
+            padding: 20px;
             text-align: center;
+            position: relative;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            color: #e74c3c;
         }
     </style>
 </head>
@@ -120,6 +169,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
@@ -127,22 +177,35 @@
     <!-- Hero Section -->
     <div class="hero">
         <div>
-            <h1>Welcome to Our Website</h1>
-            <p>Creating beautiful, responsive websites with HTML and CSS.</p>
-            <a href="#">Get Started</a>
+            <h1>Elegant Web Design</h1>
+            <p>Creating modern and responsive web pages with elegance and style.</p>
+            <a href="#">Explore More</a>
         </div>
     </div>
 
     <!-- Content Section -->
     <div class="content">
-        <h2>About Us</h2>
-        <p>We are a team of passionate web developers who love to create amazing websites that are both functional and visually appealing.</p>
-        <p><a href="#">Learn More</a></p>
+        <div class="card">
+            <h2>About Us</h2>
+            <p>We are a creative team of designers and developers committed to delivering beautiful web experiences.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <h2>Our Services</h2>
+            <p>From concept to creation, we provide a full range of web design and development services.</p>
+            <a href="#">View Services</a>
+        </div>
+        <div class="card">
+            <h2>Our Work</h2>
+            <p>Check out our portfolio to see the projects we have proudly delivered for our clients.</p>
+            <a href="#">See Portfolio</a>
+        </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Beautiful Web Page. All rights reserved.</p>
+        <p>&copy; 2024 Elegant Web Design. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
 
 </body>
