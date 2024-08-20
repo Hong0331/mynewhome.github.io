@@ -1,8 +1,149 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-      머리이다.
-    </head>
-    <body>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Web Page</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Hero section styles */
+        .hero {
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            color: #fff;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero a {
+            background: #f39c12;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .hero a:hover {
+            background: #e67e22;
+        }
+
+        /* Content section styles */
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .content a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 2px solid #f39c12;
+        }
+
+        .content a:hover {
+            color: #f39c12;
+        }
+
+        /* Footer styles */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Welcome to Our Website</h1>
+            <p>Creating beautiful, responsive websites with HTML and CSS.</p>
+            <a href="#">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>About Us</h2>
+        <p>We are a team of passionate web developers who love to create amazing websites that are both functional and visually appealing.</p>
+        <p><a href="#">Learn More</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Beautiful Web Page. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
